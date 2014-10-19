@@ -8,7 +8,7 @@ if($CSVfp !== FALSE) {
  while(! feof($CSVfp)) {
   $data = fgetcsv($CSVfp, 1000, ",");
   
-  if($data[1]==$stat)
+  if($data[1]==$stat && isset($data[12]))
   {
 	 $sum = $sum + $data[12];
  
