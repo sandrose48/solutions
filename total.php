@@ -1,7 +1,7 @@
 <html>
 <body>
 <?php
-$stat = "	Closed";
+$stat = "Closed";
 $sum=0;
 $CSVfp = fopen("final.csv", "r");
 if($CSVfp !== FALSE) {
